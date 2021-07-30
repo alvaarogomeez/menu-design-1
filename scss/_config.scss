@@ -1,0 +1,104 @@
+/**** TODO 
+    - Hacer los mixins de transitions
+
+
+****/
+
+/*** IMPORT FONTS ***/
+/** Roboto (Default) **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*** GENERAL SETTINGS ***/
+/** Variables **/
+$fuentePrimaria: 'Roboto', sans-serif;
+$fuenteSecundaria: 'Roboto', sans-serif;
+$primaryColor: cornflowerblue;
+$shadedColor: rgba(27, 27, 27, 0.7);
+
+/** Text Settings **/
+h1,h2,h3,h4,h5,h6,p{
+    font-family: $fuentePrimaria;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2.7em;
+}
+h2{
+    font-size: 2.4em;
+}
+h3{
+    font-size: 2.1em;
+}
+h4{
+    font-size: 1.9em;
+}
+h5{
+    font-size: 1.6em;
+}
+h6{
+    font-size: 1.3em;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: $fuenteSecundaria;
+    font-size: .95em;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+}
+/** Utilities **/  
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.section-title{
+    h2{
+        font-size: 1.2em;
+    }
+    text-align: center;
+}
+.active{
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+}
+
+.fa-chevron-right{
+    transition: all .3s ease-in-out;
+}
+.dropdown-showing{
+    transform: rotate(90deg);
+}
+
+
+@keyframes dropdownShow{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}

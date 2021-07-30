@@ -1,0 +1,320 @@
+body.menu{
+    .more-info-plate-tab{
+        // // opacity: 0;
+        // // visibility: hidden;
+        // // z-index: -10;
+        // position: fixed;
+        // // top: 0;
+        // // left: 0;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // // padding: 2rem;
+        // box-shadow: 0 0 0 100vh rgb(128, 170, 248);
+        // background-color: #fff;
+        // min-height: 90vh;
+        // max-height: 90vh;
+        // max-width: 90%;
+        // width: 90%;
+        // // padding: 5rem;
+        // border-radius: 10px;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 90vh;
+        max-height: 90vh;
+        max-width: 90%;
+        width: 90%;
+        background-color: #fff;
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        overflow-y: auto;
+        box-shadow: 0 0 0 100vh rgba(0, 42, 66, 0.582);
+        border-radius: 10px;
+        transition: .2s ease;
+        z-index: -100;
+        transform: translateY(-100vh);
+
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            z-index: 1000;
+            transform: translateY(0);
+        }
+
+
+
+
+
+        .plate-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 2rem .5rem 2rem;
+        
+            .plate-name{
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 1.6em;
+                color: $primaryColor;
+                margin-bottom: .5rem;
+            }
+            .plate-price{
+                font-size: 1.4em;
+            }
+
+            .plate-description{
+                line-height: 1.8;
+                font-size: 1em;
+                text-align: center;
+            }
+            .logo{
+                position: absolute;
+                bottom: 20px;
+                left: 33%;
+
+                h1{
+                    font-weight: 900;
+                    color: $primaryColor;
+                    letter-spacing: .7px;
+                }
+            }
+        }
+        i.close-cross{
+            position: absolute;
+            top: 2.5%;
+            right: 5%;
+            font-size: 1.5em;
+            color: $primaryColor;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .navbar{
+        min-height: 60px;
+        min-width: 100%;
+        background-color: $primaryColor;
+        padding: .2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+
+        .logo{
+            flex: 0 1 calc(50% - 2rem);
+            h1{
+                font-size: 1.2em;
+            }
+        }
+        .title-menu{
+            position: absolute;
+            align-items: center;
+            &.titleToRight{
+                position: static;
+                align-items: none;
+                flex: 0 1 calc(50% - 2rem);
+                display: flex;
+                justify-content: flex-end;
+
+                h1{
+                    font-size: 1em;
+                }
+            }
+
+            h1{
+                font-size: 1.7em;
+            }
+        }
+
+            
+        }
+    }
+    .hero, .partners-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // .logo{
+        //     text-align: center;
+        //     margin: 5rem 0 2rem 0;
+            
+        // }
+    }
+    .hero{
+        position: relative;
+        height: 50vh;
+        .logo{
+            position: absolute;
+            top: 35%;
+            align-items: center;
+            // align-items: center;
+            // left: 7%;
+            h1{
+                font-size: 1.8em;
+            }
+        }
+        .welcome{
+            line-height: 1.8;
+            font-size: 1em;
+            text-align: center;
+            margin: .5rem 0 3rem 0;
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+    .menu-section{
+        max-width: 100%;
+        ul{
+            li.category-wrapper{
+                background-color: $primaryColor;
+                border: 2px solid rgb(65, 122, 228);
+                .cat-title-container{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    max-height: 30px;
+                    padding: 1rem 0;
+                    transition: all .3 ease-in-out;
+                    .title-cat{
+                        flex: 0 1 calc(40% - 1rem);
+
+                        h3{
+                            font-size: 1.2em;
+                            text-transform: uppercase;
+                        }
+                    }
+    
+                    img{
+                        width: 30px;
+                    }
+                }
+
+                ul.plates-list{
+                    max-height: 0px;
+
+                    transition: max-height .2s ease;
+                    li.dropdown-plate{
+                        background-color: rgb(128, 170, 248);
+                        max-height: 48px;
+                        border: 1px solid rgb(65, 122, 228);
+
+                        transition: all .3s ease-in-out;
+
+
+                        .plate-container{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            padding: .6rem 0;
+
+                            .title-plate{
+                                h4{
+                                    font-size: 1.2em;
+                                    text-transform: uppercase;
+                                    letter-spacing: .5px;
+                                }
+                            }
+
+                            .more-info{
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .partners-section{
+        display: flex;
+
+        margin-top: 3rem;
+
+        .logo{
+            margin-bottom: 3rem;
+        }
+
+        ul.partners-list{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            li{
+                flex: 0 1 calc(33% - 1rem);
+                padding: 2rem 0;
+                text-align: center;
+            }
+        }
+    }
+
+    footer.site-footer{
+        background-color: $primaryColor;
+
+        .footer-content{
+            padding: 1rem 1rem 0 1rem;
+
+            .footer-sections{
+                &>div{
+                    padding: 1.6rem 0 .5rem 0;
+                    
+                    .footer-section-title{
+                        h2{
+                            font-size: 1.4em;
+                        }
+                    }
+                    .footer-section-content{
+                        padding: 1.3rem;
+
+                        &>div{
+                            padding: .5rem 0;
+                        }
+                    }
+                }
+            }
+
+            .promo-footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .social{
+                    i{
+                        margin: .9rem;
+                        font-size: 1.4em;
+                    }
+                    // padding: 0;
+                }
+            }
+        }
+
+        hr.copyright-separator{
+            max-width: 85%;
+            // max-height: .1px;
+            color: $shadedColor;
+        }
+        .copyright{
+            text-align: center;
+
+            p{
+                padding: .5rem 0;
+                font-size: 1em;
+
+                span{
+                    color: $shadedColor;
+                }
+
+                a{
+                    font-weight: 700;
+                }
+            }
+        }
+    }

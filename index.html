@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fav Resturant Menu</title>
+    <script src="https://kit.fontawesome.com/c95a79cff5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/styles.css">
+</head>
+
+<body class="menu">
+    <div class="more-info-plate-tab" id="more-info-plate-tab">
+        <div class="plate-info">
+            <div class="plate-name">
+                <h4>Plate 1</h4>
+            </div>
+
+            <div class="plate-price">
+                <p>$10.00</p>
+            </div>
+
+            <div class="plate-img">
+                <img src="./img/image_black_24dp.svg" alt="">
+            </div>
+
+            <div class="plate-description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt incidunt accusantium fugit
+                    ea
+                    voluptatem doloremque earum libero, impedit, iste neque beatae ex aspernatur quisquam.</p>
+            </div>
+
+
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+        </div>
+
+        <i onclick="showMoreInfoPlate()" class="close-cross fas fa-times"></i>
+    </div>
+
+    <div id="topNav" class="navbar">
+        <div id="title-menu" class="title-menu">
+            <h1>La Carta</h1>
+        </div>
+    </div>
+
+    <div id="hero" class="hero container">
+        <div id="logo-header" class="logo">
+            <h1>LOGO</h1>
+        </div>
+
+        <p class="welcome">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum natus aliquid voluptate officiis
+            exercitationem maiores atque distinctio doloribus sunt! Voluptates?
+        </p>
+    </div>
+
+    <main class="menu-section">
+        <ul class="cats-list">
+            <li id="cat-1" class="category-wrapper">
+                <div class="cat-title-container">
+                    <div class="title-cat">
+                        <h3>Category 1</h3>
+                    </div>
+
+                    <i id="chevron-1" onclick="toggleDropdown(this.id)" class="fas fa-chevron-right"></i>
+                </div>
+
+                <ul class="plates-list">
+                    <li class="dropdown-plate plate-1">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 1</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-2">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 2</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-3">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 3</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-4">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 4</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-5">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 5</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-6">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 6</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-7">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 7</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-8">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 8</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li id="cat-2" class="category-wrapper">
+                <div class="cat-title-container">
+                    <div class="title-cat">
+                        <h3>Category 2</h3>
+                    </div>
+
+                    <i id="chevron-2" onclick="toggleDropdown(this.id)" class="fas fa-chevron-right"></i>
+                </div>
+
+                <ul class="plates-list">
+                    <li class="dropdown-plate plate-1">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 1</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-2">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 2</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-3">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 3</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-4">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 4</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-5">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 5</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-6">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 6</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-7">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 7</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li id="cat-3" class="category-wrapper">
+                <div class="cat-title-container">
+                    <div class="title-cat">
+                        <h3>Category 3</h3>
+                    </div>
+
+                    <i id="chevron-3" onclick="toggleDropdown(this.id)" class="fas fa-chevron-right"></i>
+                </div>
+
+                <ul class="plates-list">
+                    <li class="dropdown-plate plate-1">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 1</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-2">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 2</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-3">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 3</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-4">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 4</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-5">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 5</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-6">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 6</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-7">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 7</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li id="cat-4" class="category-wrapper">
+                <div class="cat-title-container">
+                    <div class="title-cat">
+                        <h3>Category 4</h3>
+                    </div>
+
+                    <i id="chevron-4" onclick="toggleDropdown(this.id)" class="fas fa-chevron-right"></i>
+                </div>
+
+                <ul class="plates-list">
+                    <li class="dropdown-plate plate-1">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 1</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-2">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 2</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-3">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 3</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-4">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 4</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-5">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 5</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-6">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 6</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-7">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 7</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li id="cat-5" class="category-wrapper">
+                <div class="cat-title-container">
+                    <div class="title-cat">
+                        <h3>Category 5</h3>
+                    </div>
+
+                    <i id="chevron-5" onclick="toggleDropdown(this.id)" class="fas fa-chevron-right"></i>
+                </div>
+
+                <ul class="plates-list">
+                    <li class="dropdown-plate plate-1">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 1</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-2">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 2</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-3">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 3</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-4">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 4</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-5">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 5</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-6">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 6</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="dropdown-plate plate-7">
+                        <div class="plate-container">
+                            <div class="title-plate">
+                                <h4>Plate 7</h4>
+                            </div>
+
+                            <div class="more-info">
+                                <p onclick="showMoreInfoPlate()">More info</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$10.00</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <div class="partners-section container">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+
+        <div class="section-title title-partners">
+            <h2>We work with the best brands</h2>
+        </div>
+
+        <ul class="partners-list">
+            <li class="partner">PART 1</li>
+            <li class="partner">PART 2</li>
+            <li class="partner">PART 3</li>
+            <li class="partner">PART 4</li>
+            <li class="partner">PART 5</li>
+            <li class="partner">PART 6</li>
+        </ul>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="contact-section">
+                    <div class="footer-section-title">
+                        <h2>SAY HELLO</h2>
+                    </div>
+
+                    <div class="footer-section-content">
+                        <div class="location">
+                            <p>
+                                497 Evergreen rd. Roseville, CA 95673
+                            </p>
+                        </div>
+                        <div class="tlf">
+                            <p>
+                                +44 345 678 903
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="career-section">
+                    <div class="footer-section-title">
+                        <h2>JOBS</h2>
+                    </div>
+
+                    <div class="footer-section-content">
+                        <div class="encourage">
+                            <p>We are always looking for talent</p>
+                        </div>
+                        <div class="mail">
+                            <p>jobs@mail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo-footer">
+                    <div class="social">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://es-es.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+                    </div>
+
+                    <div class="logo">
+                        <h5>LOGO</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="copyright-separator">
+        <div class="copyright">
+            <p> <span>Developed by </span><a href="https://www.fiverr.com/alvaarogomeez?public_mode=true"
+                    target="_blank">Wanweb
+                    &copy</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
