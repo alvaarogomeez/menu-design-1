@@ -33,55 +33,57 @@ window.addEventListener('scroll', () => {
 
     let scrollValue = window.scrollY;
 
-    if (Math.floor(scrollValue) < 60) {
-        topNav.innerHTML = `
-            <div id="title-menu" class="title-menu">
-                <h1>La Carta</h1>
-            </div>
-        `;
-
-        hero.innerHTML = `
-            <div id="logo-header" class="logo">
-                <h1>LOGO</h1>
-            </div>
-
-            <p class="welcome">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum natus aliquid voluptate officiis
-                exercitationem maiores atque distinctio doloribus sunt! Voluptates?
-            </p>
-        `;
-        var logoHeader = document.getElementById('logo-header');
-        var titleMenu = document.getElementById('title-menu');
-
-        titleMenu.style.top = 'auto';
-        titleMenu.style.right = 37.5 + scrollValue * -0.55 + '%';
-        titleMenu.childNodes[1].style.fontSize = 1.7 + scrollValue * -0.01 + 'em';
-
-
-        logoHeader.style.top = 35 + scrollValue * -0.25 + '%';
-        logoHeader.style.left = 37.5 + scrollValue * -0.65 + '%';
-        logoHeader.childNodes[1].style.fontSize = 1.8 + scrollValue * -0.01 + 'em';
-
-    } else if (Math.floor(scrollValue) >= 60) {
-        topNav.innerHTML = `
-                <div class="logo">
-                    <h1>LOGO</h1>
-                </div>
-
+    if (scrollValue >= 0) {
+        if (Math.floor(scrollValue) < 60) {
+            topNav.innerHTML = `
                 <div id="title-menu" class="title-menu">
                     <h1>La Carta</h1>
                 </div>
             `;
-        hero.innerHTML = `
+
+            hero.innerHTML = `
+                <div id="logo-header" class="logo">
+                    <h1>LOGO</h1>
+                </div>
+    
                 <p class="welcome">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum natus aliquid voluptate officiis
                     exercitationem maiores atque distinctio doloribus sunt! Voluptates?
                 </p>
             `;
+            var logoHeader = document.getElementById('logo-header');
+            var titleMenu = document.getElementById('title-menu');
+
+            titleMenu.style.top = 'auto';
+            titleMenu.style.right = 37.5 + scrollValue * -0.55 + '%';
+            titleMenu.childNodes[1].style.fontSize = 1.7 + scrollValue * -0.01 + 'em';
 
 
-        var titleMenu = document.getElementById('title-menu');
-        titleMenu.classList.add('titleToRight');
+            logoHeader.style.top = 35 + scrollValue * -0.25 + '%';
+            logoHeader.style.left = 37.5 + scrollValue * -0.65 + '%';
+            logoHeader.childNodes[1].style.fontSize = 1.8 + scrollValue * -0.01 + 'em';
+
+        } else if (Math.floor(scrollValue) >= 60) {
+            topNav.innerHTML = `
+                    <div class="logo">
+                        <h1>LOGO</h1>
+                    </div>
+    
+                    <div id="title-menu" class="title-menu">
+                        <h1>La Carta</h1>
+                    </div>
+                `;
+            hero.innerHTML = `
+                    <p class="welcome">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum natus aliquid voluptate officiis
+                        exercitationem maiores atque distinctio doloribus sunt! Voluptates?
+                    </p>
+                `;
+
+
+            var titleMenu = document.getElementById('title-menu');
+            titleMenu.classList.add('titleToRight');
+        }
     }
 });
 
@@ -96,7 +98,6 @@ function showMoreInfoPlate() {
         plateTabOpen = false;
     }
 }
-
 
 let dropdownOpen = false;
 function toggleDropdown(id) {
